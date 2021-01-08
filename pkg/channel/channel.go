@@ -1,4 +1,4 @@
-// 채널 유틸리티 패키지
+// Package channel 채널 유틸리티 패키지
 package channel
 
 import (

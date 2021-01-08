@@ -20,7 +20,7 @@ func TestMergeChannel(t *testing.T) {
 
 	data := makeDataset(100)
 	go func() {
-		for k, _ := range data {
+		for k := range data {
 			if rand.Int() % 2 == 0 {
 				in1 <- k
 			} else {
@@ -46,7 +46,7 @@ func BenchmarkMergeChannel(b *testing.B) {
 
 	data := makeDataset(b.N)
 	go func() {
-		for k, _ := range data {
+		for k := range data {
 			if rand.Int() % 2 == 0 {
 				in1 <- k
 			} else {
