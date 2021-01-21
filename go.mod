@@ -1,4 +1,4 @@
-module go-common
+module utils
 
 go 1.15
 
