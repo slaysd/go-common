@@ -1,4 +1,4 @@
-module utils
+module github.com/slaysd/go-common
 
 go 1.15
 
